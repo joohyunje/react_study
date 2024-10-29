@@ -1,10 +1,10 @@
 import './App.css';
-import SideEffect from './docs/life-cycle/function/SideEffect';
+import Styled01 from './pages/docs/_component/Styled01';
 
 function App() {
   return (
     <>
-      <SideEffect/>
+      <Styled01/>
     </>
   );
 }

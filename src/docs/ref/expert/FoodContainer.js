@@ -19,7 +19,7 @@ const FoodContainer = () => {
   }
 
   const onChangeCheckBox = (i) => {
-    checked.splice(i, 1, !checked[i])
+    checked.splice(i, 1, !checked[i]) // 수정!!
     setChecked(checked.concat());
   }
 
