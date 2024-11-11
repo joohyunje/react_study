@@ -1,10 +1,16 @@
+import { ThemeProvider } from 'styled-components';
 import './App.css';
-import Styled01 from './pages/docs/_component/Styled01';
+import GlobalStyle from './global/globalStyle';
+import theme from './global/theme';
+import AnimalsContainer from './docs/context/expert/AnimalsContainer';
 
 function App() {
   return (
     <>
-      <Styled01/>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <AnimalsContainer />
+      </ThemeProvider>
     </>
   );
 }
