@@ -10,10 +10,12 @@ import { Provider } from 'react-redux';
 import { devToolsEnhancer } from '@redux-devtools/extension';
 import count from './modules/count';
 import font from './modules/font';
+import rootReducer from './modules';
+import {BrowserRouter} from 'react-router-dom';
+
 
 // 스토어 생성
-const store = createStore(font, devToolsEnhancer());
-
+const store = createStore(rootReducer, devToolsEnhancer());
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

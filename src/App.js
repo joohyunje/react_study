@@ -2,15 +2,15 @@ import { ThemeProvider } from 'styled-components';
 import './App.css';
 import GlobalStyle from './global/globalStyle';
 import theme from './global/theme';
-import CountContainer from './pages/docs/count/CountContainer';
-import FontContainer from './pages/docs/font/FontContainer';
+import { RouterProvider } from 'react-router-dom';
+
 
 function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <FontContainer />
+        <RouterProvider router = {router}/>
       </ThemeProvider>
     </>
   );
